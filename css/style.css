@@ -1,0 +1,184 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/bahia.jpg);
+    background-size: 100%;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #b49999;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: block;
+    text-align: center; /* Centrar el contenido del contenedor */
+  }
+  
+  input[type="text"],
+  select {
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 14px 28px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th,
+  table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Estilos del menÃº */
+  .menu {
+    background-color: #333;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos especÃ­ficos de cada pÃ¡gina */
+  .container.home {
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .container.home h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .container.home p {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .container.carga-archivos{
+    text-align: center;
+  }
+  
+  .container.carga-archivos form {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .container.carga-archivos select {
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    width: 100%;
+    max-width: 400px;
+    margin-right: 0;
+  }
+  
+  .container.carga-archivos button {
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-top: 10px;
+  }
+  
+  .container.consulta form {
+    text-align: center;
+  }
+  
+  .container.consulta table {
+    margin-top: 30px;
+  }
+  
+  .container.consulta th,
+  .container.consulta td {
+    text-align: center;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+  
+    /* Estilos especÃ­ficos de cada pÃ¡gina responsiva */
+    .container.home h1 {
+        font-size: 20px;
+    }
+  
+    input[type="text"],
+    select {
+        max-width: 100%;
+    }
+  
+    .container.carga-archivos select {
+        max-width: 100%;
+    }
+  
+    button {
+        padding: 14px 28px;
+        font-size: 18px;
+        display: block;
+        margin: 0 auto; /* Centrar horizontalmente */
+        margin-top: 10px;
+    }
+  
+    /* Estilos responsivos para el campo "cantidad" */
+    #cantidad {
+        display: block;
+        margin: 0 auto; /* Centrar horizontalmente */
+        max-width: 100%;
+    }
+  }

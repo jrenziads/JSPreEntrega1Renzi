@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container home">
+        <h1>Recargo General</h1>
+        <form id="formRecargo">
+            <div class="form-group">
+                <label for="monto">Monto:</label>
+                <input type="number" name="monto" id="monto" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="cuotas">Cantidad de Cuotas:</label>
+                <select name="cuotas" id="cuotas" required>
+                    <option value="" disabled selected>Seleccione la cantidad de cuotas</option>
+                    <option value="2">2 cuotas</option>
+                    <option value="3">3 cuotas</option>
+                    <option value="4">4 cuotas</option>
+                    <option value="5">5 cuotas</option>
+                    <option value="6">6 cuotas</option>
+                    <option value="9">9 cuotas</option>
+                    <option value="12">12 cuotas</option>
+                    <option value="18">18 cuotas</option>
+                </select>
+            </div>
+            <br>
+            <button type="button" onclick="calcularRecargo()">Calcular Recargo</button>
+        </form>
+        <!-- aca mostraremos los resultados -->
+        <div id="resultado" style="display: none;">
+            <h2>Resultados:</h2>
+            <div id="resultadoRecargo"></div>
+        </div>
+    </div>
+    </div>
+    <script src="./calcula.js"></script>
+</body>
+</html>
