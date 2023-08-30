@@ -1,10 +1,9 @@
-
-
-/// esto es para el proyecto
+/// esto es para el proyecto Pre entrega 1
+// Me traigo los datos del html
 function calcularRecargo() {
     const monto = parseFloat(document.getElementById('monto').value);
     const cuotas = parseInt(document.getElementById('cuotas').value);
-    
+    // si so si tengo que poner un valor en monto (si pongo otra cosa no valida) y la cantidad de cuotas para que siga
     if (isNaN(monto) || isNaN(cuotas)) {
         alert('Ingrese un monto y seleccione la cantidad de cuotas válidos.');
         return;
